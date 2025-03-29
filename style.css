@@ -11,7 +11,6 @@
     --thd-colr: lightblue;
     --frt-colr:black;
     --fft-colr:white;
-    --side:0px;
     --sidego:-300px;
 
 }
@@ -131,7 +130,6 @@ header{
     
 }
 .sidebtnon{
-    --side:300px;
     --sidego:0px;
 
 }
@@ -161,7 +159,7 @@ header{
 .sidebar{
     height: 80%;
     padding:50px 20px;
-    width: var(--side);
+    width: 300px;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.4) ;
     backdrop-filter: blur(15px);
@@ -261,7 +259,7 @@ footer{
 }
 .links a{ 
     font-size: 18px;
-    margin-left: 170px;
+    margin-left: 230px;
     text-decoration: none;
     color:blueviolet;
     transition: 0.3s;
