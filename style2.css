@@ -11,8 +11,8 @@
     --thd-colr: lightblue;
     --frt-colr:black;
     --fft-colr:white;
-    --side:0px;
     --sidego:-300px;
+    --side:150px;
 
 }
 .dark-theme{
@@ -99,7 +99,7 @@ body{
 }
 
 header{
-    position: fixed;
+    position: absolute;
     top:0;
     left: 0;
     width: 100%;
@@ -129,9 +129,8 @@ header{
     
 }
 .sidebtnon{
-    --side:300px;
     --sidego:0px;
-
+    --side: 370px;
 }
 .navbar a{
     font-size: 18px;
@@ -159,7 +158,7 @@ header{
 .sidebar{
     height: 80%;
     padding:50px 20px;
-    width: var(--side);
+    width: 300px;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.4) ;
     backdrop-filter: blur(15px);
@@ -169,7 +168,6 @@ header{
     border-radius: 10px;
     left: var(--sidego);
     top: 74px;
-
 }
 
 ul li{
@@ -195,15 +193,15 @@ ul li a{
 .guitar{
     width:1000px;
     height: 200px;
-    position: relative;
-    top:-100px;
-    left:-150px;
+    position: absolute;
+    top:150px;
+    left:var(--side);
     background-color:rgba(223, 178, 241, 0.458);
-    border: 2px var(--frt-colr) rgba(20, 3, 3, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px;
     border-radius: 10px;
     padding: 30px 40px;
+    transition: 0.5s;
 }
 .guitar h3{
     font-size: 30px;
@@ -260,9 +258,22 @@ ul li a{
 .guitar #link2:hover{
     color:white;
 }
+.Chem{
+    width:1000px;
+    height: 200px;
+    position: absolute;
+    top:400px;
+    left:var(--side);
+    background-color:rgba(223, 178, 241, 0.458);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    transition: 0.5s;
+}
 footer{
-    position:fixed;
-    bottom: 0;
+    position:absolute;
+    bottom: 0px;
     left:0;
     padding: 25px 5%;
     display: flex;
@@ -275,7 +286,7 @@ footer{
 }
 .links a{ 
     font-size: 18px;
-    margin-left: 170px;
+    margin-left: 230px;
     text-decoration: none;
     color:blueviolet;
     transition: 0.3s;
