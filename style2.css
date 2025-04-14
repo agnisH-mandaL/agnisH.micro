@@ -230,16 +230,33 @@ ul li a{
     font-size: 17px;
 
 }
-.guitar #link{
-    position:relative;
+.guitar button{
+    position: relative;
+    width: 60px;
+    height: 30px;
     left:200px;
-    color: black;
-    text-decoration:none ;
+    top:7px;
+    border: none;
+    border-width: 3px;
+    background-color:aliceblue;
+    box-shadow: 0 4px grey;
+    border-radius: 25%;
+    cursor:pointer;
     transition: 0.3s;
 }
-.guitar #link:hover{
-    color:white;
+    
+.guitar button:active{
+    top: 10px;
+    box-shadow: 0 1px grey;
+    transition: 0.1s;
 }
+.guitar #link{
+    position:relative;
+    font-size: 16px;
+    color: black;
+    text-decoration:none ;
+}
+
 .guitar p1{
     position:relative;
     left:150px;
@@ -248,7 +265,7 @@ ul li a{
 }
 .guitar #link2{
     position: relative;
-    left: 150px;
+    left: 135px;
     top:50px;
     font-size: 18px;
     color: black;
