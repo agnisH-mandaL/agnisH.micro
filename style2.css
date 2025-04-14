@@ -202,6 +202,7 @@ ul li a{
     border-radius: 10px;
     padding: 30px 40px;
     transition: 0.5s;
+    cursor:default;
 }
 .guitar h3{
     font-size: 30px;
@@ -259,7 +260,7 @@ ul li a{
 
 .guitar p1{
     position:relative;
-    left:150px;
+    left:135px;
     top:50px;
     font-size: 18px;
 }
