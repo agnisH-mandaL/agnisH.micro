@@ -199,6 +199,7 @@ p{
     font-size: 25px;
     top: 200px;
     left:100px;
+    color: var(--frt-colr);
     background-color: rgba(255, 255, 255, 0.3) ;
     backdrop-filter:blur(10px);
     border-radius: 20px;
