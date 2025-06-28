@@ -32,42 +32,7 @@
     font-family: 'VT323';
     src:url('VT323-Regular.ttf')
 } 
-@keyframes trans{
-    0%
-    {background: linear-gradient(to right,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    12.5%{background: linear-gradient(to right,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    25%{background: linear-gradient(to right,purple,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    37.5%{background: linear-gradient(to right,purple,purple,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    50%{
-        background: linear-gradient(to right,purple,purple,purple,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80));
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;
-    }
-    62.5%{background: linear-gradient(to right,purple,purple,purple,purple,purple,purple,rgb(128, 0, 80),red);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    75%{background: linear-gradient(to right,red,rgb(128, 0, 80),purple,purple,purple,purple,purple,rgb(128, 0, 80));
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    87.5%{background: linear-gradient(to right,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple,purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    
-    100%
-    {
-        background: linear-gradient(to right,rgb(128, 0, 80),red,rgb(128, 0, 80),rgb(128, 0, 80),purple,purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;
-    }
-}
+
 @keyframes bobble{
     0%{
     }
@@ -276,7 +241,7 @@ ul li a{
 .guitar #link2:hover{
     color:white;
 }
-.Chem{
+.Resistance{
     width:1000px;
     height: 200px;
     position: absolute;
@@ -288,6 +253,65 @@ ul li a{
     border-radius: 10px;
     padding: 30px 40px;
     transition: 0.5s;
+}
+.Resistance h3{
+font-size: 30px;
+    font-family: "VT323",sans-serif; 
+    position: relative;
+    color:black;
+    left:200px;
+}
+.Resistance img{
+    height: 150px;
+    width:210px;
+    position: absolute;
+    border-radius: 15%;
+    left: 20px;
+    top:20px;
+    box-shadow:0px 5px 10px black ;
+    transition: 0.3s;
+}
+.Resistance a :hover{
+    transform: scale(1.015);
+
+}
+.Resistance p{
+    position:relative;
+    left:200px;
+    font-size: 17px;
+
+}
+.Resistance button{
+    position: relative;
+    width: 60px;
+    height: 30px;
+    left:200px;
+    top:7px;
+    border: none;
+    border-width: 3px;
+    background-color:aliceblue;
+    box-shadow: 0 4px grey;
+    border-radius: 25%;
+    cursor:pointer;
+    transition: 0.3s;
+}
+    
+.Resistance button:active{
+    top: 10px;
+    box-shadow: 0 1px grey;
+    transition: 0.1s;
+}
+.Resistance #link{
+    position:relative;
+    font-size: 16px;
+    color: black;
+    text-decoration:none ;
+}
+.Resistance p1{
+    position:relative;
+    left:135px;
+    top:50px;
+    font-size: 18px;
 }
 footer{
     position:absolute;
