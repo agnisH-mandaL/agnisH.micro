@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agnisH.micro</title>
+    <link rel="stylesheet" href="resistor.css"/>
+    
+</head>
+
+<body>                                 
+    <header>
+        <button class="sidebtn" id="sidebtn">agnisH.micro</button>
+        
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="#">About </a>
+           
+            <button class="theme" id="theme"></button>
+            
+
+            
+        </nav>
+    </header>
+<script src="script.js"></script>
+<script src="resistor.js"></script>
+
+         <section class="sidebar">
+            <ul>
+                
+                <li><a href="/htmlpage1.html">Wanna learn cool things?</a></li>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/shop.html">Gallery</a></li>
+                <li><a href="/shop.html">Contact</a></li>
+                <li><a href="/shop.css">Study</a></li>
+            </ul>
+        </section>
+        <section class="resistor">
+            <img src="resistor.png" alt="resistor">
+            <section id="band1" class="band1"></section>
+            <section id="band2" class="band2"></section>
+            <section id="band3" class="band3"></section>
+            <section id="band4" class="band4"></section>
+            <label id="lbl1" for="selectColor1">Select 1st band colour</label>
+            <label id="lbl2" for="selectColor2">Select 2nd band colour</label>
+            <label id="lbl3" for="selectColor3">Select 3rd band colour</label>
+            <label id="lbl4" for="selectColor4">Select 4th band colour</label>
+            <select id="selectColor1" onchange="changeColor1()">
+                <option value="black">0.Black</option>
+                <option value="brown">1.Brown</option>
+                <option value="red">2.Red</option>
+                <option value="rgb(255, 106, 0)">3.Orange</option>
+                <option value="yellow">4.Yellow</option>
+                <option value="green">5.Green</option>
+                <option value="blue">6.Blue</option>
+                <option value="purple">7.Violet</option>
+                <option value="grey">8.Grey</option>
+                <option value="white">9.White</option>
+            
+            </select>
+            <select id="selectColor2" onchange="changeColor2()">
+                <option value="black">0.Black</option>
+                <option value="brown">1.Brown</option>
+                <option value="red">2.Red</option>
+                <option value="rgb(255, 106, 0)">3.Orange</option>
+                <option value="yellow">4.Yellow</option>
+                <option value="green">5.Green</option>
+                <option value="blue">6.Blue</option>
+                <option value="purple">7.Violet</option>
+                <option value="grey">8.Grey</option>
+                <option value="white">9.White</option>
+            </select>
+            <select id="selectColor3" onchange="changeColor3()">
+                <option value="black">0.Black</option>
+                <option value="brown">1.Brown</option>
+                <option value="red">2.Red</option>
+                <option value="rgb(255, 106, 0)">3.Orange</option>
+                <option value="yellow">4.Yellow</option>
+                <option value="green">5.Green</option>
+                <option value="blue">6.Blue</option>
+                <option value="purple">7.Violet</option>
+                <option value="grey">8.Grey</option>
+                <option value="white">9.White</option>
+                <option value="goldenrod">Gold</option>
+                <option value="silver">Silver</option>
+            </select>
+            <select id="selectColor4" onchange="changeColor4()">
+                <option value="goldenrod">Gold</option>
+                <option value="silver">Silver</option>
+
+            </select>
+            <button id="resistance" onclick="Resistance()">
+                Resistance:</button>
+            <p id="output">0</p>
+             <p id="or">/</p>
+             <p id="output2">0</p>
+        </section>
+        
+    </section>
+<footer>
+    <nav class="links">
+        <a href="https://www.linkedin.com/in/agnish-mandal-5a7926336/">LinkedIn</a>
+        <a href="https://www.instagram.com/savage_nerd._?igsh=MTUxd2JzNHMwMzFrMw==">Instagram</a>
+        <a href="https://www.keybr.com/profile/05kq58m">Typebr</a>
+        <a href="https://github.com/agnisH-mandaL">GitHub</a>
+
+    </nav>
+    
+</footer>
+</body>
+</html>
