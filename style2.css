@@ -313,9 +313,91 @@ font-size: 30px;
     top:50px;
     font-size: 18px;
 }
+.echelon{
+    width:1000px;
+    height: 200px;
+    position: absolute;
+    top:650px;
+    left:var(--side);
+    background-color:rgba(223, 178, 241, 0.458);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    transition: 0.5s;
+}
+.echelon h3{
+font-size: 30px;
+    font-family: "VT323",sans-serif; 
+    position: relative;
+    color:black;
+    left:200px;
+}
+.echelon img{
+    height: 150px;
+    width:210px;
+    position: absolute;
+    border-radius: 15%;
+    left: 20px;
+    top:20px;
+    box-shadow:0px 5px 10px black ;
+    transition: 0.3s;
+}
+.echelon a :hover{
+    transform: scale(1.015);
+
+}
+.echelon p{
+    position:relative;
+    left:200px;
+    font-size: 17px;
+
+}
+.echelon button{
+    position: relative;
+    width: 60px;
+    height: 30px;
+    left:200px;
+    top:7px;
+    border: none;
+    border-width: 3px;
+    background-color:aliceblue;
+    box-shadow: 0 4px grey;
+    border-radius: 25%;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.echelon button img
+{
+    height: 30px;
+    width:30px;
+    position: absolute;
+    border-radius: 15%;
+    left: 15px;
+    top:0px;
+    box-shadow:none ;
+
+}
+.echelon button:active{
+    top: 10px;
+    box-shadow: 0 1px grey;
+    transition: 0.1s;
+}
+.echelon #link{
+    position:relative;
+    font-size: 16px;
+    color: black;
+    text-decoration:none ;
+}
+.echelon p1{
+    position:relative;
+    left:135px;
+    top:50px;
+    font-size: 18px;
+}
 footer{
     position:absolute;
-    bottom: 0px;
+    bottom:-300px;
     left:0;
     padding: 25px 5%;
     display: flex;
