@@ -259,7 +259,7 @@ ul li a{
     width:150px;
     font-size: 25px;
     position: relative;
-    top: 20px;
+    top: 10px;
     right:200px;
     border: none;
     border-width: 3px;
@@ -276,25 +276,25 @@ ul li a{
 }
 .resistor #output
 {
-    position: relative;
-    left:1000px;
-    bottom:2px;
+    position: absolute;
+    left:1160px;
+    bottom:345px;
     font-size: 20px;
     color:var(--frt-colr);
 }
 .resistor #or
 {
-    position: relative;
-    left:1145px;
-    bottom:30px;
+    position: absolute;
+    left:1350px;
+    bottom:340px;
     font-size: 30px;
     color:var(--frt-colr);
 }
 .resistor #output2
 {
-    position: relative;
-    left:1160px;
-    bottom:60px;
+    position: absolute;
+    left:1370px;
+    bottom:345px;
     font-size: 20px;
     color:var(--frt-colr);
 }
