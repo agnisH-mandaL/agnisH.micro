@@ -123,6 +123,7 @@ header{
     border-radius: 10px;
     left: var(--sidego);
     top: 74px;
+    z-index:10;
 
 }
 
