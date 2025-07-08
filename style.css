@@ -258,3 +258,10 @@ footer{
     font-size: 25.5px;
     }
 }
+@media(max-width:400px)
+{
+    .links a{
+        margin-left: 6vw;
+
+    }
+}
