@@ -32,42 +32,7 @@
     font-family: 'VT323';
     src:url('VT323-Regular.ttf')
 } 
-@keyframes trans{
-    0%
-    {background: linear-gradient(to right,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    12.5%{background: linear-gradient(to right,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    25%{background: linear-gradient(to right,purple,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    37.5%{background: linear-gradient(to right,purple,purple,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80),purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    50%{
-        background: linear-gradient(to right,purple,purple,purple,purple,purple,rgb(128, 0, 80),red,rgb(128, 0, 80));
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;
-    }
-    62.5%{background: linear-gradient(to right,purple,purple,purple,purple,purple,purple,rgb(128, 0, 80),red);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    75%{background: linear-gradient(to right,red,rgb(128, 0, 80),purple,purple,purple,purple,purple,rgb(128, 0, 80));
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    87.5%{background: linear-gradient(to right,rgb(128, 0, 80),red,rgb(128, 0, 80),purple,purple,purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;}
-    
-    100%
-    {
-        background: linear-gradient(to right,rgb(128, 0, 80),red,rgb(128, 0, 80),rgb(128, 0, 80),purple,purple,purple,purple);
-        -webkit-text-fill-color: transparent; 
-        -webkit-background-clip: text;
-    }
-}
+
 @keyframes bobble{
     0%{
     }
@@ -96,6 +61,8 @@ body{
     background: var(--prim-colr) no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment:fixed;
+
     
 }
 
@@ -136,7 +103,7 @@ header{
 }
 .navbar a{
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 50px;
     text-decoration: none;
     color:blueviolet;
     border-bottom: 2px solid transparent;
@@ -148,14 +115,14 @@ header{
 }
 
 .theme{
-    width: 30px;
-    height: 30px;
+    width: 2vw;
+    height: 2vw;
     box-shadow: 0 0 15px var(--sec-colr);
     border: none;
     background-color:var(--sec-colr);
     border-radius: 50%;
     cursor:pointer;
-    margin-left: 70px;
+    margin-left: 5vw;
 }
 .sidebar{
     height: 80%;
@@ -170,6 +137,7 @@ header{
     border-radius: 10px;
     left: var(--sidego);
     top: 74px;
+    z-index: 10;
 
 }
 
@@ -195,15 +163,16 @@ ul li a{
 }
 
 p{
-    position:fixed;
-    font-size: 25px;
+    position:absolute;
+    font-size:1.5vw;
     top: 200px;
     left:100px;
+    color:var(--frt-colr);
     background-color: rgba(255, 255, 255, 0.3) ;
     backdrop-filter:blur(10px);
     border-radius: 20px;
     padding: 30px 40px;
-    width: 1000px;
+    width: 70vw;
 }
   
 
@@ -220,6 +189,7 @@ footer{
     box-shadow: 0 0 5px rgba(red, green, blue, alpha);
     backdrop-filter: blur(20px);
     border: 2px solid rgba(255,255,255,.2);
+    z-index: 10;
 }
 .links a{ 
     font-size: 18px;
@@ -231,4 +201,34 @@ footer{
 .links a:hover,
 .links a.active {
     color:white;
+}
+@media (max-width:600px)
+{
+    .sidebtn{font-size: 25px;}
+    .navbar a{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .sidebtn:hover{font-size: 25.5px;}
+    p{
+        left:10vw;
+        font-size: 4vw;
+    }
+    .theme{
+        width: 20px;
+        height: 20px;
+    }
+    footer{padding:3vh}
+    .links a{
+        font-size: 15px;
+        margin-left: 8vw;
+
+    }
+}
+@media(max-width:400px)
+{
+    .links a{
+        margin-left: 6vw;
+
+    }
 }
