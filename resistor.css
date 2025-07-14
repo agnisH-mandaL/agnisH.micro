@@ -54,11 +54,12 @@ body{
 
 
 header{
-    position: fixed;
+    position: absolute;
     top:0;
     left: 0;
     width: 100%;
-    padding: 20px 5%;
+    padding: 2vw 5%;
+
     background-color:transparent;
     display: flex;
     backdrop-filter:blur(20px);
@@ -77,6 +78,8 @@ header{
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+
+    
 }
 .sidebtn:hover{
     font-size: 35.5px;
@@ -88,7 +91,7 @@ header{
 
 }
 .navbar a{
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 30px;
     text-decoration: none;
     color:blueviolet;
@@ -101,17 +104,19 @@ header{
 }
 
 .theme{
-    width: 30px;
-    height: 30px;
+
+
+    width: 2vw;
+    height: 2vw;
     box-shadow: 0 0 15px var(--sec-colr);
     border: none;
     background-color:var(--sec-colr);
     border-radius: 50%;
     cursor:pointer;
-    margin-left: 70px;
+    margin-left: 5vw;
 }
 .sidebar{
-    height: 80%;
+    height: 100%;
     padding:50px 20px;
     width: 300px;
     position: absolute;
@@ -123,7 +128,7 @@ header{
     border-radius: 10px;
     left: var(--sidego);
     top: 74px;
-    z-index:10;
+    z-index: 10;
 
 }
 
@@ -146,122 +151,132 @@ ul li a{
 .sidebar a:hover{
     padding-left: 20px;
 }
-
-.resistor img{
-    height: 300px;
-    width:600px;
+.resistor-img{
+    height: 25vw;
+    width: 45vw;
+    top: 13%;
+    left:32%;
     position: absolute;
-    top: 100px;
-    left:500px;
+}
+.resistor-img img{
+    height: 20vw;
+    width:40vw;
+    position: absolute;
+    top: 0%;
+    left:0%;
     
 }
-.band1
+ .band1
 {
-    width:20px;
-    height:102px;
+    width:1.2vw;
+    height: 6.8vw;
     position:absolute;
     background-color: white;
-    top:163px;
-    left:719px;
+    top:17%;
+    left:32.4%;
     clip-path: polygon(0% 0%, 100% 3%, 100% 75%, 0% 78%);
     
 }
-.band2
+ .band2
 {
-    width:20px;
-    height:87px;
+    width:1.3vw;
+    height:5.8vw;
     position:absolute;
     background-color: white;
-    top:170px;
-    left:750px;
+    top:18.5%;
+    left:37%;
     clip-path: polygon(0% 0%, 100% 1%, 100% 75%, 0% 76%);
 }
 .band3
 {
-    width:20px;
-    height:87px;
+    width:1.3vw;
+    height:5.8vw;
     position:absolute;
     background-color: white;
-    top:170px;
-    left:781px;
+    top:18.8%;
+    left:41.6%;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 75%);
 }
 .band4
 {
-    width:20px;
-    height:100px;
+    width:1.3vw;
+    height:6.8vw;
     position:absolute;
     background-color: white;
-    top:165px;
-    left:841px;
+    top:17.4%;
+    left:50.5%;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 75%);
 }
+
+.resistor{font-size: 1vw;}
 .resistor #lbl1{
-    position: relative;
-    left:-50px;
+    position: absolute;
+    left:10%;
     color:var(--frt-colr);
 
 }
+
 .resistor #lbl2{
-    position: relative;
-    left:50px;
+    position: absolute;
+    left:25%;
     color:var(--frt-colr);
 }
+
 .resistor #lbl3{
-    position: relative;
-    left:100px;
+    position: absolute;
+    left:40%;
     color:var(--frt-colr);
 }
 .resistor #lbl4{
-    position: relative;
-    left:150px;
+    position: absolute;
+    left:55%;
     color:var(--frt-colr);
 }
 .resistor select 
 {
-    font-size: 15px;
+    font-size: 1vw;
     color: black;
 }
 .resistor select option
 {
-    font-size: 15px;
+    font-size: 1vw;
     color: black;
 }
 .resistor #selectColor1{
     width:100px;
     height:20px;
-    position: relative;
-    top: 20px;
-    right: 655px;
+    position: absolute;
+    top:55%;
+    left: 10%;
 }
 .resistor #selectColor2{
     width:100px;
     height:20px;
-    position: relative;
-    top: 20px;
-    right: 510px;
+    position: absolute;
+    top:55%;
+    left: 25%;
 }
 .resistor #selectColor3{
     width:100px;
     height:20px;
-    position: relative;
-    top: 20px;
-    right: 410px;
+    position: absolute;
+    top:55%;
+    left: 40%;
 }
 .resistor #selectColor4{
     width:100px;
     height:20px;
-    position: relative;
-    top: 20px;
-    right: 310px;
+    position: absolute;
+    top:55%;
+    left: 55%;
 }
 .resistor button
 {
-    width:150px;
-    font-size: 25px;
-    position: relative;
-    top: 10px;
-    right:200px;
+    width:10vw;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 52%;
+    left:70%;
     border: none;
     border-width: 3px;
     background-color:rgb(133, 197, 254);
@@ -271,39 +286,39 @@ ul li a{
 }
     
 .resistor button:active{
-    top:22px;
+    top:53%;
     box-shadow: 0 1px grey;
    
 }
 .resistor #output
 {
     position: absolute;
-    left:1160px;
-    bottom:345px;
-    font-size: 20px;
+    left:82%;
+    top:52.5%;
+    font-size: 1vw;
     color:var(--frt-colr);
 }
 .resistor #or
 {
     position: absolute;
-    left:1350px;
-    bottom:340px;
-    font-size: 30px;
+    left:90%;
+    top: 52%;
+    font-size: 1.5vw;
     color:var(--frt-colr);
 }
 .resistor #output2
 {
     position: absolute;
-    left:1370px;
-    bottom:345px;
-    font-size: 20px;
+    left:91%;
+    top: 52.5%;
+    font-size: 1vw;
     color:var(--frt-colr);
 }
 footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left:0;
-    padding: 25px 5%;
+    padding: 2vw 5%;
     display: flex;
     width:100%;
     margin: none;
@@ -311,10 +326,13 @@ footer{
     box-shadow: 0 0 5px rgba(red, green, blue, alpha);
     backdrop-filter: blur(20px);
     border: 2px solid rgba(255,255,255,.2);
+
+
+
 }
 .links a{ 
-    font-size: 18px;
-    margin-left: 230px;
+    font-size: 1.2vw;
+    margin-left: 15vw;
     text-decoration: none;
     color:blueviolet;
     transition: 0.3s;
@@ -323,3 +341,87 @@ footer{
 .links a.active {
     color:white;
 }
+
+@media (max-width:600px)
+{
+    .navbar a
+    {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .sidebtn
+    {
+        font-size: 25px;
+    }
+    .sidebtn:hover{
+        font-size: 25.5px;
+    }
+    .theme{
+        width: 20px;
+        height: 20px;
+    }
+    .links a{
+        font-size: 15px;
+    }
+    .resistor{font-size: 10px;}
+    .resistor #lbl1{top:30vh;}
+    .resistor #lbl2{
+        left:10%;
+        top:35vh;}
+    .resistor #lbl3{
+        left:10%;
+        top:40vh;}
+    .resistor #lbl4{
+        left:10%;
+        top:45vh;}
+    .resistor #selectColor1{
+        left:30%;
+        top:30vh;}
+    .resistor #selectColor2{
+        left:30%;
+        top:35vh;}
+    .resistor #selectColor3{
+        left:30%;
+        top:40vh;}
+    .resistor #selectColor4{
+        left:30%;
+        top:45vh;}
+    .resistor select {font-size: 10px;}
+    .resistor select option{font-size: 10px;}
+    .resistor button{font-size: 15px;
+    width: 12vh;
+    left: 10%;}
+    .resistor #output{font-size: 10px;left: 30%;}
+    .resistor #or{font-size: 15px;left: 45%;}
+    .resistor #output2{font-size: 10px;left: 47%;}
+
+
+}
+@media(max-width:450px)
+{
+    .resistor #selectColor1{
+        left:40%;
+}
+    .resistor #selectColor2{
+        left:40%;
+}
+    .resistor #selectColor3{
+        left:40%;
+}
+    .resistor #selectColor4{
+        left:40%;
+}
+    .resistor #output{left: 37%;}
+    .resistor #or{left: 56%;}
+    .resistor #output2{left: 58%;}
+    .links a{
+        margin-left: 6vw;
+    }
+}
+@media(max-width:375px)
+{
+    .resistor #or{left: 61%;}
+    .resistor #output2{left: 63%;}
+
+}
+
