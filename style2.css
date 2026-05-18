@@ -126,9 +126,9 @@ header{
 }
 .sidebar{
     height: 100%;
-    padding:50px 20px;
+    padding:10vw 20px;
     width: 320px;
-    position: absolute;
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.4) ;
     backdrop-filter: blur(15px);
     box-shadow: black;
@@ -136,7 +136,7 @@ header{
     transition:  0.5s ease;
     border-radius: 10px;
     left: var(--sidego);
-    top: 74px;
+    top: 0;
     z-index: 10;
 }
 
@@ -392,10 +392,81 @@ ul li a{
     transition: 0.1s;
 }
 
+.projectile{
+    width:60vw;
+    height: 12vw;
+    position: absolute;
+    top:110vh;
+    left:var(--side);
+    background-color:rgba(223, 178, 241, 0.458);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    padding: min(40em,2%);
+    transition: 0.5s;
+}
+.projectile h3{
+    font-size: 2vw;
+    font-family: "VT323",sans-serif; 
+    position: relative;
+    color:black;
+    left:24%;
+}
+.projectile img{
+    height: 8vw;
+    width:12vw;
+    position: absolute;
+    border-radius: 15%;
+    left: 3%;
+    top:10%;
+    box-shadow:0px 5px 10px black ;
+    transition: 0.3s;
+    
+}
+.projectile a :hover{
+    transform: scale(1.015);
+
+}
+.projectile p{
+    position:absolute;
+    left:25%;
+    font-size: 1vw;
+
+}
+.projectile button{
+    position: absolute;
+    width: 3.5vw;
+    height: 2vw;
+    left:25%;
+    top:60%;
+    border: none;
+    border-width: 3px;
+    background-color:aliceblue;
+    box-shadow: 0 4px grey;
+    border-radius: 25%;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.projectile button img
+{
+    height: 2vw;
+    width:2vw;
+    position: absolute;
+    border-radius: 15%;
+    left: 24%;
+    top:0%;
+    box-shadow:none ;
+
+}
+.projectile button:active{
+    top: 61%;
+    box-shadow: 0 1px grey;
+    transition: 0.1s;
+}
 
 footer{
     position:absolute;
-    bottom:-300px;
+    bottom:-400px;
     left:0px;
     padding: 2vw 5%;
     display: flex;
@@ -495,7 +566,33 @@ footer{
     .links a{
         font-size: 15px;
     }
-
+    
+    .projectile{
+    width:80vw;
+    height:20vh;
+    position: absolute;
+    
+    }
+    .projectile img{
+        width: 15vw;
+        height: 10vw;
+    }
+    .projectile h3
+    {
+        font-size:20px    
+    }
+    .projectile button{
+        width:9vw;
+        height:5vw;
+    }
+    .projectile p{font-size: 10px;}
+    .projectile button img{
+        height: 5vw;
+        width:5vw;
+    }
+    .links a{
+        font-size: 15px;
+    }
 }
 @media(max-width:400px)
 {
